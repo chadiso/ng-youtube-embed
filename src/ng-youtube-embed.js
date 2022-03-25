@@ -51,7 +51,7 @@
         }
 
         //Modified to sanitize the URL parameters
-        var urlParams = 'enablejsapi=' + options.enablejsapi + '&autoplay=' + options.autoplay + '&cc_load_policy=' + options.ccloadpolicy + '&color=' + options.color + '&controls=' + options.controls + '&disablekb=' + options.disablekb + '&end=' + options.end + '&fs=' + options.fs + '&hl=' + options.hl + '&iv_load_policy=' + options.ivloadpolicy + '&playlist=' + scope.playlistArray + '&playsinline=' + options.playsinline + '&rel=' + options.rel + '&showinfo=' + options.showinfo + '&start=' + options.start + '&modestbranding=' + options.modestbranding + '&loop=' + options.loop + '&listType=' + options.listType + '&list=' + options.list + '&origin=' + options.origin;
+        var urlParams = 'enablejsapi=' + options.enablejsapi + '&autoplay=' + options.autoplay + '&cc_load_policy=' + options.ccloadpolicy + '&color=' + options.color + '&controls=' + options.controls + '&disablekb=' + options.disablekb + '&end=' + options.end + '&fs=' + options.fs + '&hl=' + options.hl + '&iv_load_policy=' + options.ivloadpolicy + '&playlist=' + scope.playlistArray + '&playsinline=' + options.playsinline + '&rel=' + options.rel + '&showinfo=' + options.showinfo + '&start=' + options.start + '&modestbranding=' + options.modestbranding + '&loop=' + options.loop + '&listType=' + options.listType + '&list=' + options.list + '&origin=' + options.origin + '&mute=' + options.autoplay;
         urlParams = urlParams.replace(/([a-zA-Z_]+=&)/g, '').replace(/&$/, '').replace(/([a-zA-Z_]+=$)/g, '');
 
         // Modified to forcefully add the event listners after tab switching/using ng-if directive
